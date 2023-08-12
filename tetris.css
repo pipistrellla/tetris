@@ -1,0 +1,37 @@
+:root{
+	--my-background-color: white;
+}
+
+body{
+	text-align: center;
+	background: var(--my-background-color);
+}
+
+
+canvas.my-canvas{
+	background: var(--my-background-color);
+	max-width: 10px 0px 0px 10px;
+}
+
+
+.pause-message{
+	display: none ;
+	position: fixed;
+/*я хз почему но ни margin ни padding в 1 строку не получилось применить	*/
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(178, 222, 39 , 0.6);
+	justify-content: center;
+	align-items: center;
+	color: black;
+	font-size: 4em;
+	text-shadow: -2px 0 lightgoldenrodyellow, 0 2px lightgoldenrodyellow,
+	 2px 0 lightgoldenrodyellow, 0 -2px lightgoldenrodyellow;
+	flex-direction:  column;
+}
+
+.pause-message.show{
+	display: flex;
+}
